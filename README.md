@@ -1,44 +1,21 @@
-## This is a fork slightly modified so it can be used for 3DS development
+# 3ds_vscode_template <sub><sub>Forked from [cuibonobo/nds_vscode_template](https://github.com/cuibonobo/nds_vscode_template)</sub></sub>
 
-# nds_vscode_template
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
-Develop Nintendo DS homebrew in a modern Visual Studio Code development environment.
+Develop Nintendo 3DS homebrew in a modern Visual Studio Code development environment.
 
   * ARM [devkitPro](https://devkitpro.org) toolchain
-  * Emulation and debugging with [DeSmuME](https://desmume.org/)
   * Working IntelliSense in [VS Code](https://code.visualstudio.com/)
 
 ## Getting Started
 
 Before this template will work, we need to do some homework and install the compiler toolchian, the emulator, and the necessary extensions for our development environment.
 
-**NOTE**: These instructions are for Windows!
-
 ### devkitPro
 
-**devkitPro** provides a set of compilers and tools so that we can create programs that are compatible with the ARM 7 and ARM 9 processors in the Nintendo DS.
+**devkitPro** provides a set of compilers and tools so that we can create programs that are compatible with the ARM 9 and ARM 11 processors in the Nintendo 3DS.
 
-Follow the instructions on the [Getting Started](https://devkitpro.org/wiki/Getting_Started) page to download the Windows graphical installer.
-
-When you run the installer, make sure to leave the default options as is so that the paths in this template point to the correct place.
-
-You can verify that the installation completed successfully by making sure you can see **devkitPro**>**MYSYS** in your Start Menu.
-
-### DeSmuME
-
-**DeSmuME** is a very stable Nintendo DS emulator that also provides basic tools for debugging our homebrew programs. Per the [DeSmuME FAQ](http://wiki.desmume.org/index.php?title=Faq#Does_the_GDB_stub_still_work.3F), the debugging functions in DeSmuME aren't completely fleshed out, but it works well enough to set breakpoints, step through code, watch memory locations for read/write operations, and other basic operations.
-
-For this template we are going to download 2 separate versions of DeSmuME: one for release builds and one for debugging.
-
-  * [DeSmuME 0.9.11 x32](http://sourceforge.net/projects/desmume/files/desmume/0.9.11/desmume-0.9.11-win32.zip/download) (Release emulator)
-  * [DeSmuME 0.9.11 x32 Dev](https://sourceforge.net/projects/desmume/files/desmume/0.9.11/desmume-0.9.11-win32-dev.zip/download) (Development emulator)
-
-To install, unzip the release emulator to `C:\desmume`. When the unzip is complete, you should have the executable at `C:\desmume\DeSmuME_0.9.11_x86.exe`.
-
-Now for the development emulator, extract it to the same path: `C:\desmume`. Click the "Replace files at the destination" button when it prompts you. When the unzip is complete, the executable should be at `C:\desmume\DeSmuME_0.9.11_x86_dev+.exe`.
-
-Double-click both the release and development emulators to make sure they work correctly. If you get an error about missing `MSVCP100.DLL`, you probably also need to install the x86 version of the [Microsoft Visual C++ 2010 Redistributable Package](http://www.microsoft.com/en-in/download/details.aspx?id=5555).
+Follow the instructions on the [Getting Started](https://devkitpro.org/wiki/Getting_Started) page.
 
 ### VS Code
 
@@ -51,7 +28,7 @@ Install a copy of [Visual Studio Code](https://code.visualstudio.com/) if you do
 
 ## Using this template
 
-The C++ source code for your Nintendo DS program will go into the `source` directory. The `main.cpp` file in this template is from the `nds/hello_world` example that comes with devkitPro. You can use this as a starting point for your own program.
+The C++ source code for your Nintendo 3DS program will go into the `source` directory. The `main.cpp` file in this template is from the `3ds/hello_world` example that comes with devkitPro. You can use this as a starting point for your own program.
 
 The `include` directory has a `vscode_fix.h` file that is used to fix IntelliSense behavior in Visual Studio Code. At the moment IntelliSense isn't smart enough to detect the feature flags that would be set by the compiler, so we add any interfaces that IntelliSense doesn't understand to this file.
 
