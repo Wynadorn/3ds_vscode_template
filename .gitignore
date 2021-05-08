@@ -1,3 +1,5 @@
 /build
+/romfs
 *.elf
 *.3dsx
+*.smdh
