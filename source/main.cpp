@@ -1,52 +1,28 @@
-/*---------------------------------------------------------------------------------
-
-	$Id: main.cpp,v 1.13 2008-12-02 20:21:20 dovoto Exp $
-
-	Simple console print demo
-	-- dovoto
-
-
----------------------------------------------------------------------------------*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <3ds.h>
 
-#include <stdio.h>
+int main(int argc, char* argv[])
+{
+	gfxInitDefault();
+	consoleInit(GFX_TOP, NULL);
 
-volatile int frame = 0;
+	printf("Hello, world!\n");
 
-//---------------------------------------------------------------------------------
-void Vblank() {
-//---------------------------------------------------------------------------------
-	frame++;
-}
-	
-//---------------------------------------------------------------------------------
-int main(void) {
-//---------------------------------------------------------------------------------
-	touchPosition touchXY;
+	// Main loop
+	while (aptMainLoop())
+	{
+		gspWaitForVBlank();
+		gfxSwapBuffers();
+		hidScanInput();
 
-	irqSet(IRQ_VBLANK, Vblank);
-
-	consoleDemoInit();
-	
-	iprintf("      Hello DS dev'rs\n");
-	iprintf("     \x1b[32mwww.devkitpro.org\n");
-	iprintf("   \x1b[32;1mwww.drunkencoders.com\x1b[39m");
- 
-	while(1) {
-	
-		swiWaitForVBlank();
-		scanKeys();
-		int keys = keysDown();
-		if (keys & KEY_START) break;
-
-		touchRead(&touchXY);
-
-		// print at using ansi escape sequence \x1b[line;columnH 
-		iprintf("\x1b[10;0HFrame = %d",frame);
-		iprintf("\x1b[16;0HTouch x = %04X, %04X\n", touchXY.rawx, touchXY.px);
-		iprintf("Touch y = %04X, %04X\n", touchXY.rawy, touchXY.py);		
-	
+		// Your code goes here
+		u32 kDown = hidKeysDown();
+		if (kDown & KEY_START)
+			break; // break in order to return to hbmenu
 	}
 
+	gfxExit();
 	return 0;
 }
