@@ -1,4 +1,5 @@
-# 3ds_vscode_template
+# 3ds_vscode_template      <sub><sub>Forked from [cuibonobo/nds_vscode_template](https://github.com/cuibonobo/nds_vscode_template))</sub></sub>
+
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
 Develop Nintendo 3DS homebrew in a modern Visual Studio Code development environment.
