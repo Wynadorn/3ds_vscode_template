@@ -13,15 +13,16 @@
                 "_DEBUG",
                 "_UNICODE",
                 "WIN32",
-                "ARM7",
-                "ARM9"
+                "ARM9",
+                "ARM11"
             ],
             "browse": {
                 "path": [
                     "${workspaceFolder}",
                     "${workspaceFolder}/include/**",
                     "${DEVKITPRO}/libctru/include/**",
-                    "${DEVKITPRO}/devkitARM/arm-none-eabi/include/**"
+                    "${DEVKITPRO}/devkitARM/arm-none-eabi/include/**",
+                    "${DEVKITPRO}/portlibs/3ds/**"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
