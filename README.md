@@ -1,4 +1,4 @@
-# 3ds_vscode_template <sub><sub>Forked from [cuibonobo/nds_vscode_template](https://github.com/cuibonobo/nds_vscode_template)</sub></sub>
+# 3ds_vscode_template (WIP) <sub><sub>Forked from [cuibonobo/nds_vscode_template](https://github.com/cuibonobo/nds_vscode_template)</sub></sub>
 
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
@@ -41,4 +41,4 @@ The `.vscode` directory holds the settings that VS Code should use for the proje
 Running the `make` build task will create an `.nds` file at the root of the project. You can run this file in the emulator by running the `run` task.
 
 ---
-To the extent possible under law, [cuibonobo](https://github.com/cuibonobo/) has [waived all copyright](https://creativecommons.org/publicdomain/zero/1.0/) and related or neighboring rights to this work.
+To the extent possible under law, [cuibonobo](https://github.com/cuibonobo/) and [wynadorn](https://github.com/wynadorn/) have [waived all copyright](https://creativecommons.org/publicdomain/zero/1.0/) and related or neighboring rights to this work.
