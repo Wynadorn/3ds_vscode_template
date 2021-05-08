@@ -1,13 +1,13 @@
 {
     "configurations": [
         {
-            "name": "NDS",
-            "forcedInclude": ["${workspaceFolder}\\include\\vscode_fix.h"],
+            "name": "3DS",
+            "forcedInclude": ["${workspaceFolder}/include/vscode_fix.h"],
             "includePath": [
                 "${workspaceFolder}",
-                "${workspaceFolder}\\include\\**",
-                "C:\\devkitPro\\libnds\\include\\**",
-                "C:\\devkitPro\\devkitARM\\arm-none-eabi\\include\\**"
+                "${workspaceFolder}/include/**",
+                "${DEVKITPRO}/libctru/include/**",
+                "${DEVKITPRO}/devkitARM/arm-none-eabi/include/**"
             ],
             "defines": [
                 "_DEBUG",
@@ -19,16 +19,16 @@
             "browse": {
                 "path": [
                     "${workspaceFolder}",
-                    "${workspaceFolder}\\include\\**",
-                    "C:\\devkitPro\\libnds\\include\\**",
-                    "C:\\devkitPro\\devkitARM\\arm-none-eabi\\include\\**"
+                    "${workspaceFolder}/include/**",
+                    "${DEVKITPRO}/libctru/include/**",
+                    "${DEVKITPRO}/devkitARM/arm-none-eabi/include/**"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
             },
             "cStandard": "c11",
             "cppStandard": "c++11",
-            "compilerPath": "C:\\devkitPro\\devkitARM\\bin\\arm-none-eabi-g++.exe"
+            "compilerPath": "${DEVKITPRO}/devkitARM/bin/arm-none-eabi-g++.exe"
         }
     ],
     "version": 4

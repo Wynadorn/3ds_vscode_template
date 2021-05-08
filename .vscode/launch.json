@@ -18,7 +18,7 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "C:\\devkitPro\\devkitARM\\bin\\arm-none-eabi-gdb.exe",
+            "miDebuggerPath": "${DEVKITPRO}/devkitARM/bin/arm-none-eabi-gdb.exe",
             "miDebuggerServerAddress": "localhost:20000",
             "setupCommands": [
                 {

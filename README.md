@@ -1,3 +1,5 @@
+## This is a fork slightly modified so it can be used for 3DS development
+
 # nds_vscode_template
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
