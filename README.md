@@ -41,6 +41,3 @@ The `vscode_fix.h` file is _only_ used by IntelliSense and will not compile with
 The `.vscode` directory holds the settings that VS Code should use for the project. The `c_cpp_properties.json` file determines what directories IntelliSense searches in to find code for your project. The `tasks.json` file defines useful tasks like `make` and `make clean` so you don't have to switch to your terminal application to run them. The `launch.json` file defines the `(gdb) Launch` task for running the debugger.
 
 Running the `make` build task will create an `.3dsx` file at the root of the project. You can run this file in the emulator by running the `run` task.
-
----
-To the extent possible under law, [cuibonobo](https://github.com/cuibonobo/) and [wynadorn](https://github.com/wynadorn/) have [waived all copyright](https://creativecommons.org/publicdomain/zero/1.0/) and related or neighboring rights to this work.
