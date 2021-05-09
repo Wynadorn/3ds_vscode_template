@@ -3,7 +3,8 @@
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
 Forked from [cuibonobo/nds_vscode_template](https://github.com/cuibonobo/nds_vscode_template)
-Develop Nintendo 3DS homebrew in a modern Visual Studio Code development environment.
+
+Develop Nintendo 3DS homebrew in the Visual Studio Code development environment.
 
   * ARM [devkitPro](https://devkitpro.org) toolchain
   * Working IntelliSense in [VS Code](https://code.visualstudio.com/)
