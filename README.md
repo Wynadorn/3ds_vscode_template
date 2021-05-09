@@ -6,12 +6,9 @@ Forked from [cuibonobo/nds_vscode_template](https://github.com/cuibonobo/nds_vsc
 
 Develop Nintendo 3DS homebrew in the Visual Studio Code development environment.
 
-  * ARM [devkitPro](https://devkitpro.org) toolchain
-  * Working IntelliSense in [VS Code](https://code.visualstudio.com/)
-
 ## Getting Started
 
-Before this template will work, we need to do some homework and install the compiler toolchian and the necessary extensions for the development environment.
+Before this template will work, we need to install the compiler toolchian and the necessary extensions for the development environment.
 
 ### devkitPro
 
