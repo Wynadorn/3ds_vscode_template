@@ -1,15 +1,14 @@
-# 3ds_vscode_template (WIP) <sub><sub>Forked from [cuibonobo/nds_vscode_template](https://github.com/cuibonobo/nds_vscode_template)</sub></sub>
+# 3ds_vscode_template
 
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
-Develop Nintendo 3DS homebrew in a modern Visual Studio Code development environment.
+Forked from [cuibonobo/nds_vscode_template](https://github.com/cuibonobo/nds_vscode_template)
 
-  * ARM [devkitPro](https://devkitpro.org) toolchain
-  * Working IntelliSense in [VS Code](https://code.visualstudio.com/)
+Develop Nintendo 3DS homebrew in the Visual Studio Code development environment.
 
 ## Getting Started
 
-Before this template will work, we need to do some homework and install the compiler toolchian, the emulator, and the necessary extensions for our development environment.
+Before this template will work, we need to install the compiler toolchian and the necessary extensions for the development environment.
 
 ### devkitPro
 
@@ -28,7 +27,8 @@ Install a copy of [Visual Studio Code](https://code.visualstudio.com/) if you do
 
 ## Using this template
 
-The C++ source code for your Nintendo 3DS program will go into the `source` directory. The `main.cpp` file in this template is from the `3ds/hello_world` example that comes with devkitPro. You can use this as a starting point for your own program.
+The C++ source code for your Nintendo 3DS program will go into the `source` directory.
+The `main.cpp` file in this template is from the `devkitpro\examples\3ds\templates\application\source\` directory that comes with devkitPro.
 
 The `include` directory has a `vscode_fix.h` file that is used to fix IntelliSense behavior in Visual Studio Code. At the moment IntelliSense isn't smart enough to detect the feature flags that would be set by the compiler, so we add any interfaces that IntelliSense doesn't understand to this file.
 
@@ -38,7 +38,4 @@ The `vscode_fix.h` file is _only_ used by IntelliSense and will not compile with
 
 The `.vscode` directory holds the settings that VS Code should use for the project. The `c_cpp_properties.json` file determines what directories IntelliSense searches in to find code for your project. The `tasks.json` file defines useful tasks like `make` and `make clean` so you don't have to switch to your terminal application to run them. The `launch.json` file defines the `(gdb) Launch` task for running the debugger.
 
-Running the `make` build task will create an `.nds` file at the root of the project. You can run this file in the emulator by running the `run` task.
-
----
-To the extent possible under law, [cuibonobo](https://github.com/cuibonobo/) and [wynadorn](https://github.com/wynadorn/) have [waived all copyright](https://creativecommons.org/publicdomain/zero/1.0/) and related or neighboring rights to this work.
+Running the `make` build task will create an `.3dsx` file at the root of the project. You can run this file in the emulator by running the `run` task.
