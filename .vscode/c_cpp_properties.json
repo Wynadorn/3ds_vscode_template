@@ -6,31 +6,68 @@
             "includePath": [
                 "${workspaceFolder}",
                 "${workspaceFolder}/include/**",
+                "${DEVKITPRO}/devkitARM/arm-none-eabi/include/**",
+                "${DEVKITPRO}/devkitARM/lib/gcc/arm-none-eabi/**",
                 "${DEVKITPRO}/libctru/include/**",
-                "${DEVKITPRO}/devkitARM/arm-none-eabi/include/**"
+                "${DEVKITPRO}/portlibs/3ds/include/**"
             ],
             "defines": [
-                "_DEBUG",
-                "_UNICODE",
-                "WIN32",
+                "_3DS",
                 "ARM9",
-                "ARM11"
+                "ARM11",
+                "_UNICODE"
+                // "_DEBUG",
             ],
             "browse": {
                 "path": [
                     "${workspaceFolder}",
                     "${workspaceFolder}/include/**",
-                    "${DEVKITPRO}/libctru/include/**",
                     "${DEVKITPRO}/devkitARM/arm-none-eabi/include/**",
-                    "${DEVKITPRO}/portlibs/3ds/**"
+                    "${DEVKITPRO}/devkitARM/lib/gcc/arm-none-eabi/**",
+                    "${DEVKITPRO}/libctru/include/**",
+                    "${DEVKITPRO}/portlibs/3ds/include/**"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
             },
             "cStandard": "c11",
-            "cppStandard": "c++11",
-            "compilerPath": "${DEVKITPRO}/devkitARM/bin/arm-none-eabi-g++.exe"
-        }
+            "cppStandard": "c++17",
+            "compilerPath": "${DEVKITPRO}/devkitARM/bin/arm-none-eabi-g++"
+        }//,
+        // {
+        //     "name": "3DS (Debug)",
+        //     "forcedInclude": ["${workspaceFolder}/include/vscode_fix.h"],
+        //     "includePath": [
+        //         "${workspaceFolder}",
+        //         "${workspaceFolder}/include/**",
+        //         "${DEVKITPRO}/devkitARM/arm-none-eabi/include/**",
+        //         "${DEVKITPRO}/devkitARM/lib/gcc/arm-none-eabi/**",
+        //         "${DEVKITPRO}/libctru/include/**",
+        //         "${DEVKITPRO}/portlibs/3ds/include/**"
+        //     ],
+        //     "defines": [
+        //         "_3DS",
+        //         "ARM9",
+        //         "ARM11",
+        //         "_UNICODE",
+        //         "_DEBUG"
+        //     ],
+        //     "browse": {
+        //         "path": [
+        //             "${workspaceFolder}",
+        //             "${workspaceFolder}/include/**",
+        //             "${DEVKITPRO}/devkitARM/arm-none-eabi/include/**",
+        //             "${DEVKITPRO}/devkitARM/lib/gcc/arm-none-eabi/**",
+        //             "${DEVKITPRO}/libctru/include/**",
+        //             "${DEVKITPRO}/portlibs/3ds/include/**"
+        //         ],
+        //         "limitSymbolsToIncludedHeaders": true,
+        //         "databaseFilename": ""
+        //     },
+        //     "cStandard": "c11",
+        //     "cppStandard": "c++20",
+        //     "compilerPath": "${DEVKITPRO}/devkitARM/bin/arm-none-eabi-g++"
+        // }
     ],
     "version": 4
 }
